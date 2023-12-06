@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 微軟正黑體 !important;
+  }
+  #nav {
+    height: 87px;
+    background: #f0f0f0;
+  }
+  #container1 {
+    width: 1140px;
+    height: 85px;
+    margin: auto;
+  }
+  #logo1 {
+    width: 136px;
+    height: 60px;
+    margin-top: 10px;
+    float: left;
+    background-image: url(https://rwd.gtut.com.tw/demo37/proimage/banner/2017/1508895332.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #nav-list {
+    height: 85x;
+    font-size: 26px;
+    float: right;
+    margin-top: 30px;
+  }
+  #nav-list li {
+    float: right;
+    margin: 15px;
+    list-style-type: none;
+  }
+  #banner {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-image: url(https://rwd.gtut.com.tw/demo37/proimage/banner/2017/1508895150.jpg);
+  }
+  #text1 {
+    width: 400px;
+    height: 60px;
+    text-align: center;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 200px);
+    color: white;
+    font-size: 36px;
+  }
+  #about {
+    height: 800px;
+    background: #f0f0f0;
+    position: relative;
+  }
+  #products {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  #product1 {
+    height: 400px;
+    width: 30%;
+    float: left;
+    margin-top: -130px;
+  }
+  #title1 {
+    height: 130px;
+    background: rgba(0, 155, 150, 0.8);
+    font-size: 24px;
+    color: white;
+    padding:20px 0 0 20px;
+  }
+  #img1 {
+    height: 270px;
+    background-image: url(https://rwd.gtut.com.tw/demo37/proimage/control_page/1508804979.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #product2 {
+    height: 400px;
+    width: 30%;
+    margin: 0 5%;
+    float: left;
+  }
+  #title2 {
+    height: 130px;
+    background: rgba(0, 155, 150, 0.8);
+    font-size: 26px;
+    color: white;
+    margin-top: -130px;
+    padding:20px 0 0 20px;
+  }
+  #img2 {
+    height: 270px;
+    background-image: url(https://rwd.gtut.com.tw/demo37/proimage/control_page/1508805177.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #product3 {
+    height: 400px;
+    width: 30%;
+    float: right;
+  }
+  #title3 {
+    height: 130px;
+    background: rgba(0, 155, 150, 0.8);
+    font-size: 26px;
+    color: white;
+    margin-top: -130px;
+    padding:20px 0 0 20px;
+  }
+  #img3 {
+    height: 270px;
+    background-image: url(https://rwd.gtut.com.tw/demo37/proimage/control_page/1508805195.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #text2 {
+    width: 1000px;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+    color: #405655;
+  }
+  #text2 p {
+    text-align: center;
+    font-size: 28px;
+    margin: 0 auto;
+    color: black;
+  }
+  #service {
+    height: 600px;
+    background: #fff;
+  }
+  #text3 {
+    width: 1000px;
+    text-align: center;
+    font-size: 30px;
+    color: #405655;
+    margin: 25px auto;
+  }
+  #text3 p {
+    text-align: center;
+    font-size: 28px;
+    margin: 0 auto;
+    color: black;
+  }
+  #box1 {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  #box2 {
+    height: 400px;
+    width: 22%;
+    float: left;
+  }
+  #img4 {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    margin: 20px auto;
+    background-color: #405655;
+    background-image: url(https://rwd.gtut.com.tw/demo37/proimage/banner/2017/1508809361.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #title4 {
+    text-align: center;
+    font-size: 24px;
+  }
+  #title4 h3{
+    text:bold;
+    color:#009b96
+  }
+  #box3 {
+    height: 400px;
+    width: 22%;
+    margin: 0 4%;
+    float: left;
+  }
+  #img5 {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    margin: 20px auto;
+    background-color: #405655;
+    background-image: url(https://rwd.gtut.com.tw/demo37/proimage/banner/2017/1508809371.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #title5 {
+    text-align: center;
+    font-size: 24px;
+  }
+  #title5 h3{
+    text:bold;
+    color:#009b96
+  }
+  #box4 {
+    height: 400px;
+    width: 22%;
+    margin-right: 4%;
+    float: left;
+  }
+  #img6 {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    margin: 20px auto;
+    background-color: #405655;
+    background-image: url(https://rwd.gtut.com.tw/demo37/proimage/banner/2017/1508809393.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #title6 {
+    text-align: center;
+    font-size: 24px;
+  }
+  #title6 h3{
+    text:bold;
+    color:#009b96
+  }
+  #box5 {
+    height: 400px;
+    width: 22%;
+    float: right;
+  }
+  #img7 {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    margin: 20px auto;
+    background-color: #405655;
+    background-image: url(https://rwd.gtut.com.tw/demo37/proimage/banner/2017/1508809408.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #title7 {
+    text-align: center;
+    font-size: 24px;
+  }
+  #title7 h3{
+    text:bold;
+    color:#009b96
+  }
+  #nav-bottom {
+    height: 60px;
+    margin-top: 150px;
+    position: relative;
+    background-color: #3e5e5d;
+    font-size: 28px;
+  }
+  #text4 {
+    width: 650px;
+    height: 60px;
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 325px);
+  }
+  #text4 p {
+    float: right;
+    margin: 10px;
+    color: #fff;
+  }
+  #footer1 {
+    height: 250px;
+    background: #405655;
+    border-top: 1px solid #fff;
+  }
+  #container2 {
+    width: 1000px;
+    height: 300px;
+    margin: 50px auto;
+  }
+  #information {
+    width: 600px;
+    height: 300px;
+    float: left;
+    color: #fff;
+  }
+  #information li{
+    list-style-type: none;
+    font-size: 22px;
+  }
+  #logo2 {
+    width: 200px;
+    height: 300px;
+    float: right;
+    background-image: url(https://rwd.gtut.com.tw/demo37/proimage/banner/2017/1509618211.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #footer2 {
+    height: 50px;
+    position: relative;
+    background-color: #1b2827;
+  }
+  #text5 {
+    width: 400px;
+    height: 50px;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 200px);
+  }
+  #text5 p {
+    float: right;
+    margin: 10px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div id="container1">
+          <div id="logo1"></div>
+          <ul id="nav-list">
+            <li>联系</li>
+            <li>下载</li>
+            <li>产品</li>
+            <li>服务</li>
+            <li>新闻</li>
+            <li>关于</li>
+          </ul>
+        </div>
+      </div>
+      <div id="banner">
+        <div id="text1">
+          <h1>地球绿</h1>
+          <h3>环境保护</h3>
+        </div>
+      </div>
+      <div id="about">
+        <div id="products">
+          <div id="product1">
+            <div id="title1">名言1<br>别让可爱的生灵在我们手中消失</div>
+            <div id="img1"></div>
+          </div>
+          <div id="product2">
+            <div id="title2">名言2<br>植树造林，功在千秋</div>
+            <div id="img2"></div>
+          </div>
+          <div id="product3">
+            <div id="title3">名言3<br>判天地之美，析万物之理</div>
+            <div id="img3"></div>
+          </div>
+        </div>
+        <div id="text2">
+          <h2>关于</h2>
+          <p>环境保护是一种在个人、组织或政府层面保护自然环境的做法...</p>
+        </div>
+      </div>
+      <div id="service">
+        <div id="text3">
+          <h2>服务</h2>
+          <p id="serve">地球能满足人类的需要，但满足不了人类的贪婪...</p>
+        </div>
+        <div id="box1">
+          <div id="box2">
+            <div id="img4"></div>
+            <div id="title4">
+              <h3>工业绿</h3>
+              <p>珍惜资源，永续利用</p>
+            </div>
+          </div>
+          <div id="box3">
+            <div id="img5"></div>
+            <div id="title5">
+              <h3>油绿色</h3>
+              <p>绿色消费，消费绿色</p>
+            </div>
+          </div>
+          <div id="box4">
+            <div id="img6"></div>
+            <div id="title6">
+              <h3>天然绿</h3>
+              <p>尊崇自然，敬畏生命</p>
+            </div>
+          </div>
+          <div id="box5">
+            <div id="img7"></div>
+            <div id="title7">
+              <h3>家常绿</h3>
+              <p>保护环境，造福人民</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="nav-bottom">
+        <div id=text4>
+          <p>联系我们</p>
+          <p>|</p>
+          <p>下载</p>
+          <p>|</p>
+          <p>产品</p>
+          <p>|</p>
+          <p>服务</p>
+          <p>|</p>
+          <p>新闻</p>
+          <p>|</p>
+          <p>关于</p>
+        </div>
+      </div>
+      <div id="footer1">
+        <div id="container2">
+          <ul id="information">
+            <li>138-XXXX-XXXX</li>
+            <li>188-XXXX-XXXX</li>
+            <li>江苏省-南京市-XXX-XXX号</li>
+          </ul>
+          <div id=logo2></div>
+        </div>
+      </div>
+      <div id="footer2">
+        <div id="text5">
+          <p>隐私政策</p>
+          <p>现场地图</p>
+          <p>GTUT设计</p>
+        </div>
+      </div>
+      <div style="clear:both"></div>
+</body>
+</html>
